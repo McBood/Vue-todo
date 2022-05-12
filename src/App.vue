@@ -47,13 +47,15 @@ export default {
       currentTask.isCompleted = !currentTask.isCompleted;
     },
     addTask: function () {
-      this.tasks.push({
-        id: Math.random().toString(36).substring(2, 7),
-        name: this.taskName,
-        type: "personalz",
-        isCompleted: false,
-      });
-      this.taskName = "";
+      if (this.taskName) {
+        this.tasks.push({
+          id: Math.random().toString(36).substring(2, 7),
+          name: this.taskName,
+          type: "personalz",
+          isCompleted: false,
+        });
+        this.taskName = "";
+      }
     },
     delTask: function (taskId) {
       this.tasks = this.tasks.filter((t) => t.id != taskId);

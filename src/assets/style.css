@@ -64,7 +64,7 @@ body {
   margin: 10px auto;
   width: 30%;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 15px;
   cursor: pointer;
 }
@@ -147,4 +147,31 @@ button.btnDel {
   margin-left: auto;
   cursor: pointer;
   margin-right: 20px;
+}
+
+.stateWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stateWrapper .state {
+  width: 16%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 15px;
+  margin-right: 10px;
+}
+
+.stateWrapper .state .h5 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.progressWrapper {
+  width: 100%;
+  background-color: #fff;
+  height: 7px;
+  border-radius: 3px;
 }
